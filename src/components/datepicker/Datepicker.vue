@@ -12,7 +12,7 @@
     <p class="control has-icon has-icon-right" v-else>
       <input class="input" :name="name" :value="interVal" :placeholder="placeholder" type="text" v-model="interVal" ref="pickrInput">
       <i class="fa fa-calendar"></i>
-      <i class="fa fa-times" @click.prevent="handleClear"></i>
+      <i class="fa fa-times" @click.prevent="handleClear" v-if="canClear"></i>
     </p>
   </span>
 </template>
@@ -30,6 +30,7 @@ export default {
     placeholder: String,
     val: String,
     value: {},
+    canClear: Boolean
   },
 
   data() {
