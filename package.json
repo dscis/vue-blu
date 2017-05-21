@@ -29,15 +29,13 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
-  "dependencies": {
-    "bulma": "^0.2.3",
-    "flatpickr": "^2.4.3",
-    "font-awesome": "^4.7.0",
-    "jump.js": "^1.0.1",
-    "lodash": "^4.17.2",
-    "popper.js": "^0.6.4",
-    "vue": "^2.1.10",
-    "vue-router": "^2.1.1"
+  "peerDependencies": {
+    "bulma": "~0.2",
+    "flatpickr": "2.x",
+    "font-awesome": "4.x",
+    "jump.js": "1.x",
+    "lodash": "4.x",
+    "popper.js": "~0.6",
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
