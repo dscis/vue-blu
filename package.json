@@ -29,14 +29,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
-  "peerDependencies": {
-    "bulma": "~0.2",
-    "flatpickr": "2.x",
-    "font-awesome": "4.x",
-    "jump.js": "1.x",
-    "lodash": "4.x",
-    "popper.js": "~0.6",
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
@@ -119,5 +112,14 @@
       "browser": true,
       "node": true
     }
+  },
+  "peerDependencies": {
+    "bulma": "^0.4.1",
+    "flatpickr": "^2.6.2",
+    "font-awesome": "^4.7.0",
+    "jump.js": "^1.0.2",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.9.5",
+    "vue": "^2.3.3"
   }
 }
